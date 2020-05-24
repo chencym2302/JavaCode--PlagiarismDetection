@@ -1,0 +1,27 @@
+
+
+body {
+    font-family: '微软雅黑', sans-serif;
+}
+
+nav.nav {
+    margin-bottom: 20px;
+}
+
+nav .navbar-nav span {
+    padding-right: 5px;
+}
+
+div.gallery-box{
+	position: relative;
+	width:960px;
+	height:314px; 
+	margin: 0 auto;
+}
+ul.sugar-gallery{
+	padding:0px; 
+	margin:0px;
+}
+ul.sugar-gallery li{
+	float:left; list-style:none; 
+}

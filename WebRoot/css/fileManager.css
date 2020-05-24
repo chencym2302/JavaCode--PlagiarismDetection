@@ -1,0 +1,101 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+.fileContent{
+    width: 100%;
+    height: 100%;
+    float: left;
+    border-style: solid;
+    border-width: thin;
+     border-color: red;
+}
+/*文件操作头*/
+.fileHeader{
+    width:100%;
+ 
+}
+/*文件操作按钮*/
+.fileHeader button{
+    width:100px;
+    height:30px;
+    margin: 10px;
+    border:none;
+    border-radius: 2px;
+    font-size: 15px;
+    background-color: #3399FF ;
+    color: white;
+}
+/*分割线*/
+.fileDivision{
+    border-style: solid;
+    border-width: thin;
+}
+/*文件列表 ul*/
+.fileList{
+    padding:0px;
+    list-style: none;
+}
+.fileContentDiv{
+    float: left;
+}
+/*文件夹*/
+.fileList li{
+    overflow: hidden;
+    width: 100px;
+    height: 150px;
+    float:left;
+    margin-left:55px;
+    background:url(../images/file.png) center top no-repeat;
+    border:1px solid #fff;
+    position:relative;
+    transition:all 0.1s ease-in 0.1s;
+}
+/*鼠标移动到文件上面的时候*/
+.fileList li:hover{
+    background:url(../images/file.png) center top no-repeat #f1f2fd;
+    border:1px solid #a7aae3;
+}
+/*文件中的div，也就是文件创建完之后的文件名显示的div*/
+.fileList li div{
+    position: relative;
+    top:85px;
+    text-align: center;
+}
+/*创建文件时候创建的输入文本*/
+.cleateInputFile{
+    width:90px;
+    position: relative;
+    top:85px;
+    text-align: center;
+}
+.fileList .selectFile{
+ 
+    background:url(../images/file.png) center top no-repeat #f1f2fd;
+    border:1px solid #a7aae3;
+}
+.menuDiv{
+    position: relative;
+    background-color: #CCCCCC;
+    width: 150px;
+    height: 100px;
+}
+.menuDiv ul{
+    position: absolute;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+ 
+}
+.menuDiv ul li{
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    border-bottom: dashed;
+    border-width: thin;
+    line-height: 30px;
+    cursor: pointer;
+}
+.menuDiv ul li:hover{
+    background-color: #66CCFF ;
+}

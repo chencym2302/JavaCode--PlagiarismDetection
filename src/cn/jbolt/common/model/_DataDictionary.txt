@@ -1,0 +1,69 @@
+Table: user
+------------+--------------+------+-----+---------+---------
+ Field      | Type         | Null | Key | Default | Remarks 
+------------+--------------+------+-----+---------+---------
+ username   | VARCHAR(20)  | NO   | PRI |         |         
+ password   | VARCHAR(8)   | NO   |     |         |         
+ email      | VARCHAR(50)  | NO   |     |         |         
+ createTime | DATETIME(19) | NO   |     |         |         
+------------+--------------+------+-----+---------+---------
+
+Table: files
+------------+--------------+------+-----+---------+---------
+ Field      | Type         | Null | Key | Default | Remarks 
+------------+--------------+------+-----+---------+---------
+ id         | VARCHAR(50)  | NO   | PRI |         |         
+ fileName   | VARCHAR(50)  | NO   |     |         |         
+ filePath   | VARCHAR(255) | NO   |     |         |         
+ classNum   | VARCHAR(50)  | NO   |     |         |         
+ lessonNum  | VARCHAR(50)  | NO   |     |         |         
+ createTime | DATETIME(19) | NO   |     |         |         
+------------+--------------+------+-----+---------+---------
+
+Table: results
+-------+-------------+------+-----+---------+---------
+ Field | Type        | Null | Key | Default | Remarks 
+-------+-------------+------+-----+---------+---------
+ id    | VARCHAR(50) | NO   | PRI |         |         
+ fileA | VARCHAR(50) | NO   |     |         |         
+ fileB | VARCHAR(50) | NO   |     |         |         
+ score | DOUBLE(22)  | YES  |     |         |         
+-------+-------------+------+-----+---------+---------
+
+Table: resultsmoss
+-----------+--------------+------+-----+---------+---------
+ Field     | Type         | Null | Key | Default | Remarks 
+-----------+--------------+------+-----+---------+---------
+ id        | INT(10)      | NO   | PRI |         |         
+ fileA     | VARCHAR(255) | YES  |     |         |         
+ fileB     | VARCHAR(255) | YES  |     |         |         
+ score     | DOUBLE(22)   | YES  |     |         |         
+ sameLines | INT(10)      | YES  |     |         |         
+-----------+--------------+------+-----+---------+---------
+
+Table: resultcount
+-------+------+------+-----+---------+---------
+ Field | Type | Null | Key | Default | Remarks 
+-------+------+------+-----+---------+---------
+-------+------+------+-----+---------+---------
+
+Table: resultscount
+--------------+------------+------+-----+---------+---------
+ Field        | Type       | Null | Key | Default | Remarks 
+--------------+------------+------+-----+---------+---------
+ id           | INT(10)    | NO   | PRI |         |         
+ badPeopleNum | INT(10)    | YES  |     |         |         
+ allPeopleNum | INT(10)    | YES  |     |         |         
+ percent      | DOUBLE(22) | YES  |     |         |         
+--------------+------------+------+-----+---------+---------
+
+Table: resultscount2
+--------------+------------+------+-----+---------+---------
+ Field        | Type       | Null | Key | Default | Remarks 
+--------------+------------+------+-----+---------+---------
+ id           | INT(10)    | NO   | PRI |         |         
+ badPeopleNum | INT(10)    | YES  |     |         |         
+ allPeopleNum | INT(10)    | YES  |     |         |         
+ percent      | DOUBLE(22) | YES  |     |         |         
+--------------+------------+------+-----+---------+---------
+
